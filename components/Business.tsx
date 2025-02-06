@@ -4,10 +4,16 @@ import Button from "./Button";
 import Image from "next/image";
 import { FeatredCardProps } from "@types";
 
-const FeaturesCard: React.FC<FeatredCardProps> = ({ icon, title, content, index }) => (
+const FeaturesCard: React.FC<FeatredCardProps> = ({
+  icon,
+  title,
+  content,
+  index,
+}) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"
-      } feature-card`}
+    className={`flex flex-row p-6 rounded-[20px] ${
+      index !== features.length - 1 ? "mb-6" : "mb-0"
+    } feature-card`}
   >
     <div
       className={`w-[64px] h-[64px] rounded-full bg-dimBlue ${styles.flexCenter}`}
@@ -25,18 +31,18 @@ const FeaturesCard: React.FC<FeatredCardProps> = ({ icon, title, content, index 
   </div>
 );
 const Business: React.FC = () => (
-  <section id="features" className={`${layout.section}`}>
+  <section id="features" className={`${layout.section} flex`}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" />
-        We'll handle the money.
+        Progrès Durables, <br className="sm:block hidden" />
+        <span className="text-[20px]">Reduire, Améliorer, Préserver.</span>
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial lif e by
-        building credit, earning rewards and saving money. But with hundreds of
-        credits cards on the market.
+        Avec les bons choix écologiques, vous pouvez contribuer à un
+        environnement plus sain en réduisant les déchets, en économisant
+        l'énergie et en soutenant la durabilité. Mais avec tant d'options
+        disponibles, il peut être difficile de faire le meilleur choix.
       </p>
-      <Button styles="mt-10" />
     </div>
     <div className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
