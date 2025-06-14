@@ -13,7 +13,7 @@ const Programme: React.FC<FeedBackProps> = ({ content, title, name, img }) => {
   };
 
   return (
-    <div className="flex justify-between flex-col px-2 py-12 rounded-[20px] xs:max-w-[30%] w-[100%] md:mr-10 sm:mr-5 mr-0 feedback-card cursor-pointer">
+    <div className="flex justify-between flex-col px-2 py-12 rounded-[20px] xs:max-w-[30%] w-[100%] md:mr-10 sm:mr-5 mr-0 cursor-pointer backdrop-blur-md bg-white/40 border border-white/20 shadow-lg transition-all duration-300 hover:bg-green-200/30">
       <Image
         src={img}
         alt={name}
@@ -21,8 +21,8 @@ const Programme: React.FC<FeedBackProps> = ({ content, title, name, img }) => {
         width={480}
         height={480}
       />
-      <h2 className="text-xl text-white font-bold mb-4">{title}</h2>
-      <p className="font-poppins font-normal text-[12px] leading-[22px] text-white my-1">
+      <h2 className="text-xl text-black font-bold mb-4">{title}</h2>
+      <p className="font-poppins font-normal text-[12px] leading-[22px] text-black my-1">
         {truncateText(content, 150)}{" "}
       </p>
       <button

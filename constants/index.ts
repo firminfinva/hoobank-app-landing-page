@@ -23,25 +23,17 @@ import { title } from "process";
 
 export const navLinks = [
   {
-    id: "acceuil",
-    title: "Acceuil",
+    id: "accueil",
+    title: "Accueil",
     link: "/",
   },
-  {
-    id: "contexte",
-    title: "Contexte",
-    link: "/Contexte",
-  },
+
   {
     id: "programme",
     title: "Programme",
     link: "#programme",
   },
-  {
-    id: "odds-co-benefices",
-    title: "ODDs & co-bénéfices",
-    link: "#odds",
-  },
+
   {
     id: "offres",
     title: "Nos offres",

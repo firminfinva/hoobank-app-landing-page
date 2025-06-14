@@ -39,7 +39,9 @@ const Home: React.FC = () => {
             <CardDeal />
           </div>
         </div>
-        <div className={`bg-teal-900 ${styles.paddingX} ${styles.flexStart}`}>
+        <div
+          className={`bg-teal-900 ${styles.paddingX} ${styles.flexStart} bg-[url('/assets/bg1.jpg')] bg-cover bg-center `}
+        >
           <div className={`${styles.boxWidth}`}>
             <Theprograms />
           </div>
@@ -50,7 +52,9 @@ const Home: React.FC = () => {
             <Partenaire />
           </div>
         </div>
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div
+          className={`bg-primary ${styles.paddingX} ${styles.flexStart} bg-[url('/assets/bg4.jpg')] bg-cover bg-center `}
+        >
           <div className={`${styles.boxWidth}`}>
             {/* <CardDeal /> */}
 

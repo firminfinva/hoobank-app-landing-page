@@ -2,9 +2,8 @@ import "@/styles/globals.css";
 import { Navbar } from "@components";
 import styles from "@styles/style";
 export const metadata = {
-  title: "HooBank",
-  description:
-    "Hoobank is an Modern Landing Page built with Next JS and Typescript",
+  title: "girenad",
+  description: "girenad",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
